@@ -297,6 +297,9 @@ nav a:hover::after{transform:scaleX(1)}
 #hero{min-height:100vh;padding-top:80px;position:relative;overflow:hidden;display:flex;align-items:center}
 .hero2-container{padding-top:56px;padding-bottom:64px}
 .hero2-wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:52px;align-items:start;width:100%}
+.hero2-pill{grid-column:1;grid-row:1}
+.hero2-left{grid-column:1;grid-row:2}
+.hero2-right{grid-column:2;grid-row:1 / span 2}
 .hero2-left{}
 .hero2-pill{display:inline-flex;align-items:center;gap:8px;background:rgba(43,109,219,.18);border:1px solid rgba(43,109,219,.35);padding:7px 18px;border-radius:24px;margin-bottom:32px;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.65)}
 .hero2-h1{font-size:clamp(28px,3.6vw,54px);font-weight:900;line-height:1.08;margin-bottom:24px;letter-spacing:-1px}
@@ -358,8 +361,9 @@ nav a:hover::after{transform:scaleX(1)}
   #hero{padding-top:73px;min-height:0}
   .hero2-container{padding-top:16px;padding-bottom:44px}
   .hero2-wrap{gap:32px}
-  .hero2-right{display:flex;order:-1;margin-bottom:12px}
-  .hero2-pill{margin-bottom:18px !important}
+  .hero2-right{display:flex;order:-1;grid-column:auto;grid-row:auto;margin-bottom:12px;position:relative}
+  .hero2-pill{grid-column:auto;grid-row:auto;order:-2;margin-bottom:0 !important}
+  .hero2-left{grid-column:auto;grid-row:auto;order:0}
   .hero2-h1{margin-bottom:16px !important}
   .hero2-p{margin-bottom:22px !important;font-size:14px}
   .hero2-btns{margin-bottom:28px !important}
@@ -972,13 +976,14 @@ img{max-width:100%;height:auto}
   <div class="container hero2-container" style="position:relative;z-index:2;width:100%">
     <div class="hero2-wrap">
 
+      <!-- Credential pill (elemento independente para poder reordenar no mobile) -->
+      <div class="hero2-pill fi">
+        <span class="badge-dot"></span>
+        <span>OAB/SP 474229 &nbsp;·&nbsp; Paraty/RJ e Costa Verde &nbsp;·&nbsp; Direito do Trabalho</span>
+      </div>
+
       <!-- LEFT: copy -->
       <div class="hero2-left fi">
-        <!-- Credential pill -->
-        <div class="hero2-pill">
-          <span class="badge-dot"></span>
-          <span>OAB/SP 474229 &nbsp;·&nbsp; Paraty/RJ e Costa Verde &nbsp;·&nbsp; Direito do Trabalho</span>
-        </div>
 
         <!-- Main headline -->
         <h1 class="hero2-h1">
