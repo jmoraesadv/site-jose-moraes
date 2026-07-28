@@ -10,6 +10,26 @@
       ],
       "destination": "https://josemoraes.adv.br/$1",
       "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/#contato",
+      "permanent": true
+    },
+    {
+      "source": "/contact/",
+      "destination": "/#contato",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "destination": "/#sobre",
+      "permanent": true
+    },
+    {
+      "source": "/about/",
+      "destination": "/#sobre",
+      "permanent": true
     }
   ],
   "headers": [
