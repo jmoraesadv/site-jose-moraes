@@ -30,6 +30,16 @@
       "source": "/about/",
       "destination": "/#sobre",
       "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/#blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/",
+      "destination": "/#blog",
+      "permanent": true
     }
   ],
   "headers": [
